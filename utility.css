@@ -1,0 +1,27 @@
+.invert{
+    filter: invert(1)
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.justify-sb{
+    justify-content: space-between;
+}
+
+.align-items{
+    align-items: center;
+}
+
+.color-w{
+    color: white;
+}
+
+.color-g{
+    color: #b3b3b3;
+}

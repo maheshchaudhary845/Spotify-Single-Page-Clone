@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="favicon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav flex align-items">
+            <div class="left-items flex align-items">
+                <div class="spotify-logo flex"><img class="invert" src="spotify_logo.svg" alt="spotify_logo"></div>
+                <div class="home-icon flex"><img class="invert" src="home.svg" alt="home_icon"></div>
+                <div class="search">
+                    <div class="search-icon">
+                        
+                    </div>
+                    <input type="search" placeholder="What do you want to play?">
+                </div>
+            </div>
+            <div class="right-items flex justify-content align-items">
+                <button class="nav-button1">Premium</button>
+                <button class="nav-button1">Support</button>
+                <button class="nav-button1">Download</button>
+                <div class="pipe"></div>
+                <div class="install-app flex justify-content align-items">
+                    <img class="install-img" src="download.svg" alt="download_icon">
+                    <button class="install">Install App</button>
+                </div>
+                <div class="log-sign-btn flex justify-content align-items">
+                    <button id="signup" class="flex justify-content align-items">Sign up</button>
+                    <button id="login" class="">Log in</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container flex">
+            <div class="left-container">
+                <div class="library flex align-items">
+                    <h2 class="color-w">Your Library</h2>
+                    <img class="invert" src="add.svg" alt="add_icon">
+                </div>
+                <div class="songs-list">
+
+                </div>
+                <div class="left-footer">
+                    <div class="links-cont">
+                        <div class="links flex">
+                            <span>Legal</span>
+                            <span>Safety & Privacy Center</span>
+                            <span>Privacy Policy</span>
+                            <span>Cookies</span>
+                            <span>About Ads</span>
+                            <span>Accessibility</span>
+                        </div>
+                            <span class="last">Cookies</span>
+                    </div>
+                    <div class="lang flex">
+                        <button class="flex justify-content align-items invert">
+                            <span class="flex justify-content align-items">
+                                <img src="lang.svg" alt="lang_icon">
+                            </span>
+                            English
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="card-container">
+                    <div class="category flex justify-sb">
+                        <h2 class="color-w">Trending Songs</h2>
+                        <div class="color-g">Show all</div>
+                    </div>
+                    <div class="cards flex">
+                        <!-- <div class="card" data-folder="kensukeUshio">
+                            <div class="cover-container flex">
+                                <img class="coverimg" src="kensukeUshio.jpg" alt="card">
+                                <div class="play flex justify-content align-items">
+                                    <img class="playlogo" src="play.svg" alt="play">
+                                </div>
+                            </div>
+                            <div class="card-description flex">
+                                <span class="color-w">Kensuke Ushio - Radio</span>
+                                <a class="color-g" href="#">Kensuke Ushio</a>
+                            </div>
+                        </div>
+                        <div class="card" data-folder="OSTs">
+                            <div class="cover-container flex">
+                                <img class="coverimg" src="osts.jpg" alt="card">
+                                <div class="play flex justify-content align-items">
+                                    <img class="playlogo" src="play.svg" alt="play">
+                                </div>
+                            </div>
+                            <div class="card-description flex">
+                                <span class="color-w">Anime Relaxing Beats</span>
+                                <a class="color-g" href="#">Playlist</a>
+                            </div>
+                        </div>
+                        <div class="card" data-folder="romantic">
+                            <div class="cover-container flex">
+                                <img class="coverimg" src="romanticDrive.jpg" alt="card">
+                                <div class="play flex justify-content align-items">
+                                    <img class="playlogo" src="play.svg" alt="play">
+                                </div>
+                            </div>
+                            <div class="card-description flex">
+                                <span class="color-w">Romantic Drive</span>
+                                <a class="color-g" href="#">Playlist</a>
+                            </div>
+                        </div>
+                        <div class="card" data-folder="trapNationSongs">
+                            <div class="cover-container flex">
+                                <img class="coverimg" src="trapNation.jpg" alt="card">
+                                <div class="play flex justify-content align-items">
+                                    <img class="playlogo" src="play.svg" alt="play">
+                                </div>
+                            </div>
+                            <div class="card-description flex">
+                                <span class="color-w">Trap Nation</span>
+                                <a class="color-g" href="#">Playlist</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="music-player flex justify-content align-items">
+                    <div class="music-title flex align-items color-w">
+                        <div class="songName"></div>
+                    </div>
+    
+                    <div class="playbar-container flex justify-content align-items">
+                        <div class="songbuttons color-w flex justify-content align-items">
+                            <div class="shuffle-icon flex">
+                                <img id="shuffle" src="shuffle.svg" alt="shuffle">
+                            </div>
+                            <div class="previous-icon flex">
+                                <img id="previous" src="previous.svg" alt="previous">
+                            </div>
+                            <div id="playicon" class="play-icon flex justify-content align-items">
+                                <img id="play" src="playS.svg" alt="play">
+                            </div>
+                            <div class="next-icon flex">
+                                <img id="next" src="next.svg" alt="next">
+                            </div>
+                            <div class="repeat-icon flex">
+                                <img id="repeat" src="repeat.svg" alt="repeat">
+                            </div>
+                        </div>
+    
+                        <div class="seekbar-cont flex justify-content align-items">
+                            <div class="song-time color-w flex align-items"></div>
+                            <div class="seekbar-container flex justify-content align-items">
+                                <div class="seekbar flex align-items">
+                                    <div class="seekbar2"></div>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="song-duration color-w flex align-items"></div>
+                        </div>
+    
+                    </div>
+
+                    <div class="extra-feature flex justify-content align-items">
+                        <div class="volume flex justify-content align-items">
+                            <img src="volume.svg" alt="volume">
+                            <input type="range" id="range" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="box flex">
+                <div class="f-left-items color-w align-items">
+                    <h3>Preview of Spotify</h3>
+                    <div>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</div>
+                </div>
+                <div class="f-right-items flex">
+                    <button>Sign up free</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
